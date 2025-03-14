@@ -1,0 +1,869 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-11-07T01:13:03.848Z",
+    "__export_source": "insomnia.desktop.app:v10.1.1",
+    "resources": [
+        {
+            "_id": "req_db2db5668106471391f7efcaafb3a434",
+            "parentId": "fld_8556a4d37cec4dd08750d661a232e5a4",
+            "modified": 1730595427403,
+            "created": 1730573872043,
+            "url": "localhost:8080/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed",
+            "name": "Deletar",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.1.1"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1730573872043,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_8556a4d37cec4dd08750d661a232e5a4",
+            "parentId": "fld_62e9b528c5a7407ebc2bfe0bde050569",
+            "modified": 1730567828384,
+            "created": 1730567828384,
+            "name": "NovosRegistros",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1730567828384,
+            "_type": "request_group"
+        },
+        {
+            "_id": "fld_62e9b528c5a7407ebc2bfe0bde050569",
+            "parentId": "wrk_scratchpad",
+            "modified": 1727706513863,
+            "created": 1727706513863,
+            "name": "OdontoPredict",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1727706513863,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_scratchpad",
+            "parentId": null,
+            "modified": 1713654654731,
+            "created": 1713654654731,
+            "name": "Scratch Pad",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_420ff1e5a3c6441f976d277bbfb9477a",
+            "parentId": "fld_8556a4d37cec4dd08750d661a232e5a4",
+            "modified": 1730595434979,
+            "created": 1730572858952,
+            "url": "localhost:8080/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed",
+            "name": "Atualizar",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"tipo\": \"dor\",\n  \"ocorrencia\": \"boca\",\n  \"intensidade\": \"intensa\",\n  \"informacoes_adicionais\": \"Descrição adicional sobre a dor e circunstâncias\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.1.1"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1730572858952,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_6ef7a0d804cb4e2ca1b159eed2826f28",
+            "parentId": "fld_8556a4d37cec4dd08750d661a232e5a4",
+            "modified": 1730585436592,
+            "created": 1730572178125,
+            "url": "localhost:8080/novos-registros/2d288586-7a14-42bb-a3cf-d55603e8f0d7",
+            "name": "Listar Novos Registro por id",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.1.1"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1730572178125,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_005e9c65d58f48ff81ee6fa9fcca2b6f",
+            "parentId": "fld_8556a4d37cec4dd08750d661a232e5a4",
+            "modified": 1730679885979,
+            "created": 1730567832127,
+            "url": "localhost:8080/novos-registros/cadastrar",
+            "name": "Cadastrar Novos Registos",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"tipo\": \"Sangramento\",\n  \"ocorrencia\": \"corte na boca e dentes quebrado\",\n  \"intensidade\": \"intensa\",\n  \"informacoes_adicionais\": \"Descrição adicional sobre a dor e circunstâncias\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.1.1"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1730567832128,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_33c738f21d2b4a0f93c8fd507367db0c",
+            "parentId": "fld_52505c5f812e4717a07596a30b934a8e",
+            "modified": 1730567843851,
+            "created": 1728183515042,
+            "url": "localhost:8080/diagnostico/07c0ba7e-ee0a-44c6-abc4-db63a194591d",
+            "name": "Deletar Diagnostico por id",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1728183515042,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_52505c5f812e4717a07596a30b934a8e",
+            "parentId": "fld_62e9b528c5a7407ebc2bfe0bde050569",
+            "modified": 1730567840819,
+            "created": 1728176875881,
+            "name": "Diagnostico",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1728176875882,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_51546d5d7c974a38b221799391ee0172",
+            "parentId": "fld_52505c5f812e4717a07596a30b934a8e",
+            "modified": 1728186455554,
+            "created": 1728183474059,
+            "url": "localhost:8080/diagnostico/b98653a9-9a03-44b4-a93a-afe7870ba576",
+            "name": "Atualizar Diagnostico por id",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"descricao\": \"Diagnóstico atualizado agora\",\n  \"recomendacao\": \"atualizado agora\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1728183474059,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e857f12348744f849584fd61a1961d07",
+            "parentId": "fld_52505c5f812e4717a07596a30b934a8e",
+            "modified": 1728186266444,
+            "created": 1728183434693,
+            "url": "localhost:8080/diagnostico/9b7412fb-4f7d-477d-9e78-7160ece939de",
+            "name": "Listar Diagnostico por id",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1728183434693,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_de82e13c82a34a4aa15f9f2635ec91ef",
+            "parentId": "fld_52505c5f812e4717a07596a30b934a8e",
+            "modified": 1730572878646,
+            "created": 1728176881439,
+            "url": "localhost:8080/diagnostico",
+            "name": "Cadastar Diagnostico",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"descricao\": \"Diagnóstico de cárie dentária em estágio inicial.\",\n  \"recomendacao\": \"Realizar escovação frequente e agendar uma consulta para aplicação de flúor.\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1728176881439,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_19fcb80393ea44a1aa139ce6faf4b24d",
+            "parentId": "fld_f337ecce1fe7479e959621030719ea90",
+            "modified": 1730855149237,
+            "created": 1730603976958,
+            "url": "localhost:8080/consulta/55c1e178-c3a4-4c68-8e76-84e59a5ab540",
+            "name": "Lista de consultas",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.1.1"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1730603976958,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_f337ecce1fe7479e959621030719ea90",
+            "parentId": "fld_62e9b528c5a7407ebc2bfe0bde050569",
+            "modified": 1728222631059,
+            "created": 1728084064213,
+            "name": "Consulta",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1728084064213,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_47c553f778084fbfaa19a2af40988c2d",
+            "parentId": "fld_f337ecce1fe7479e959621030719ea90",
+            "modified": 1728172482115,
+            "created": 1728172422102,
+            "url": "localhost:8080/consulta/82271843-530c-4f90-afbc-579e542b6403",
+            "name": "Deletar Por ID",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1728172422102,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_0d3218c9ea6a4840bf6aab68846fa242",
+            "parentId": "fld_f337ecce1fe7479e959621030719ea90",
+            "modified": 1729623282769,
+            "created": 1728171416279,
+            "url": "localhost:8080/consulta/82271843-530c-4f90-afbc-579e542b6403",
+            "name": "Atualizar Consulta por ID",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"data_consulta\": \"2023-09-10T14:30:00\",\n  \"tipo_tratamento\": \"tratamento\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1728171416279,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e0ea2b4059454d2480752003e6c68f5b",
+            "parentId": "fld_f337ecce1fe7479e959621030719ea90",
+            "modified": 1729623279723,
+            "created": 1728171206624,
+            "url": "localhost:8080/consulta/d89cf795-6e6a-4124-95f6-42173d21e70f",
+            "name": "Listar Consulta Por ID",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1728171206624,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_04ccb2d1770b46d9ba80d2e6aacf9b25",
+            "parentId": "fld_f337ecce1fe7479e959621030719ea90",
+            "modified": 1730859484999,
+            "created": 1728084068222,
+            "url": "localhost:8080/consulta",
+            "name": "Cadastar Consulta",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n    \"paciente\": {\n\t\t\t\t\"cpf\": \"66852699019\"\n    },\n    \"dentista\": {\n        \"documento_dentista\": \"24603604019\"\n    },\n    \"data_consulta\": \"2023-10-10T14:30:00\",\n    \"tipo_tratamento\": \"Limpeza\",\n\t\"diagnostico\": {\n    \"id_diagnostico\": \"a884e090-6561-4063-bd8b-0fd8bfec79c3\"\n  }\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1728084068222,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_fec047b83b8b4b0e9c18702844cc9e4a",
+            "parentId": "fld_59e6795aebe04ce09d7820ec7db47f26",
+            "modified": 1727831841207,
+            "created": 1727831803032,
+            "url": "localhost:8080/dentista/",
+            "name": "Deletar Dentista Por ID",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1727831803032,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_59e6795aebe04ce09d7820ec7db47f26",
+            "parentId": "fld_62e9b528c5a7407ebc2bfe0bde050569",
+            "modified": 1728084075353,
+            "created": 1727808951766,
+            "name": "Dentista",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1727808951766,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_60d06424ab464430a52f8a4046839207",
+            "parentId": "fld_59e6795aebe04ce09d7820ec7db47f26",
+            "modified": 1727840438096,
+            "created": 1727831776611,
+            "url": "localhost:8080/dentista/3e5b4545-5acb-4249-a003-d9d17ee37e22",
+            "name": "Atualizar Dentista",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n    \"nome_dentista\": \"Dr. ricardinho\",\n    \"especializacao\": \"Especialista\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1727831776611,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_0867b3548dec4176867790f9c18c101b",
+            "parentId": "fld_59e6795aebe04ce09d7820ec7db47f26",
+            "modified": 1727841074593,
+            "created": 1727831751962,
+            "url": "localhost:8080/dentista/227b892a-b2c4-4915-9703-b7b5131b8980",
+            "name": "Buscar Dentista Por ID",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1727831751962,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e68d31d03555440aa8056a6497574ec3",
+            "parentId": "fld_59e6795aebe04ce09d7820ec7db47f26",
+            "modified": 1728164869372,
+            "created": 1727831623440,
+            "url": "localhost:8080/dentista",
+            "name": "Lista Dentista",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1727831623440,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_0c892ecca6b5465ba1dc07488f7f3979",
+            "parentId": "fld_59e6795aebe04ce09d7820ec7db47f26",
+            "modified": 1730665658885,
+            "created": 1727808954408,
+            "url": "localhost:8080/dentista",
+            "name": "Cadastra Dentista",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n    \"nome_dentista\": \"Dr. Maria Oliveira\",\n\t\t\"documento_dentista\": \"24603604019\",\n    \"especializacao\": \"Ortodontia\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1727808954408,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4852fa1cf37944529f0736d428917b32",
+            "parentId": "fld_e01b41ebe5954cd5b7ebfb51dbe7e261",
+            "modified": 1727830651326,
+            "created": 1727802355172,
+            "url": "http://localhost:8080/paciente/e42f1fa0-ed23-403c-9fa3-d4a2edadf0e7",
+            "name": "Deletar por ID",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1727802355172,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_e01b41ebe5954cd5b7ebfb51dbe7e261",
+            "parentId": "fld_62e9b528c5a7407ebc2bfe0bde050569",
+            "modified": 1730665384863,
+            "created": 1727706568990,
+            "name": "Paciente",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1727706568990,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_5ac3145f34bb49c8bc2541625cbb688a",
+            "parentId": "fld_e01b41ebe5954cd5b7ebfb51dbe7e261",
+            "modified": 1730856011171,
+            "created": 1727715591117,
+            "url": "http://localhost:8080/paciente/12c16a86-5d98-4f53-94d6-98742886dde9",
+            "name": "Buscar Paciente por ID",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1727715591117,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_1303f819c571465692961e811d826211",
+            "parentId": "fld_e01b41ebe5954cd5b7ebfb51dbe7e261",
+            "modified": 1728185314046,
+            "created": 1727715398340,
+            "url": "http://localhost:8080/paciente/cbc9b536-e5aa-4c26-ae4f-129ea3116c89",
+            "name": "ataualizar paciente",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n    \"nome\": \"Keven Ike\"\t\n}\n         "
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1727715398340,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_bbdfff8118d24f25ad6559aa9684444e",
+            "parentId": "fld_e01b41ebe5954cd5b7ebfb51dbe7e261",
+            "modified": 1728164877658,
+            "created": 1727715279271,
+            "url": "http://localhost:8080/paciente",
+            "name": "Listar Paciente",
+            "description": "",
+            "method": "GET",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1727715279271,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_77c571056ebf4ff993677b1286420332",
+            "parentId": "fld_e01b41ebe5954cd5b7ebfb51dbe7e261",
+            "modified": 1730665652257,
+            "created": 1727706586271,
+            "url": "localhost:8080/paciente",
+            "name": "Cadastrar Paciente",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n    \"nome\": \"Jose neto\",\n\t\t\"cpf\": \"66852699019\",\n    \"data_nascimento\": \"2002-08-11\"\n}\n         "
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/10.0.0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1727706586271,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_99d30891da4bdcebc63947a8fc17f076de878684",
+            "parentId": "wrk_scratchpad",
+            "modified": 1719511248213,
+            "created": 1713654848828,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": {},
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1713654848828,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_99d30891da4bdcebc63947a8fc17f076de878684",
+            "parentId": "wrk_scratchpad",
+            "modified": 1719511248209,
+            "created": 1713654848947,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "id": "6b099897-e8a2-455c-ba47-7c2a8633bd1c",
+                    "key": "JSESSIONID",
+                    "value": "DEA88D0412CCF4B3105B06636313D981",
+                    "expires": null,
+                    "domain": "localhost",
+                    "path": "/",
+                    "secure": false,
+                    "httpOnly": true,
+                    "extensions": [],
+                    "hostOnly": true
+                }
+            ],
+            "_type": "cookie_jar"
+        }
+    ]
+}

@@ -1,0 +1,1204 @@
+{
+	"info": {
+		"_postman_id": "d220e39d-5e5c-4359-bc19-0f829453c142",
+		"name": "Request -Docker Prevdent",
+		"description": "Aqui temos todas as chamadas realizadas pelo nosso servico batendo no ip na cloud Azure.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37693470"
+	},
+	"item": [
+		{
+			"name": "OdontoPredict",
+			"item": [
+				{
+					"name": "NovosRegistros",
+					"item": [
+						{
+							"name": "Deletar",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"novos-registros",
+										"1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"tipo\": \"dor\",\n  \"ocorrencia\": \"boca\",\n  \"intensidade\": \"intensa\",\n  \"informacoes_adicionais\": \"Descrição adicional sobre a dor e circunstâncias\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://191.238.221.61:8080/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"novos-registros",
+										"1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Novos Registro por id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/novos-registros/2d288586-7a14-42bb-a3cf-d55603e8f0d7",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"novos-registros",
+										"2d288586-7a14-42bb-a3cf-d55603e8f0d7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cadastrar Novos Registos",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"tipo\": \"Sangramento\",\n  \"ocorrencia\": \"corte na boca e dentes quebrado\",\n  \"intensidade\": \"intensa\",\n  \"informacoes_adicionais\": \"Descrição adicional sobre a dor e circunstâncias\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://191.238.221.61:8080/novos-registros/cadastrar",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"novos-registros",
+										"cadastrar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Diagnostico",
+					"item": [
+						{
+							"name": "Deletar Diagnostico por id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/diagnostico/07c0ba7e-ee0a-44c6-abc4-db63a194591d",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"diagnostico",
+										"07c0ba7e-ee0a-44c6-abc4-db63a194591d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar Diagnostico por id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"descricao\": \"Diagnóstico atualizado agora\",\n  \"recomendacao\": \"atualizado agora\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://191.238.221.61:8080/diagnostico/b98653a9-9a03-44b4-a93a-afe7870ba576",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"diagnostico",
+										"b98653a9-9a03-44b4-a93a-afe7870ba576"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Diagnostico por id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/diagnostico/9b7412fb-4f7d-477d-9e78-7160ece939de",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"diagnostico",
+										"9b7412fb-4f7d-477d-9e78-7160ece939de"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cadastar Diagnostico",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"descricao\": \"Diagnóstico de cárie dentária em estágio inicial.\",\n  \"recomendacao\": \"Realizar escovação frequente e agendar uma consulta para aplicação de flúor.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://191.238.221.61:8080/diagnostico",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"diagnostico"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Consulta",
+					"item": [
+						{
+							"name": "Lista de consultas",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/consulta/55c1e178-c3a4-4c68-8e76-84e59a5ab540",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"consulta",
+										"55c1e178-c3a4-4c68-8e76-84e59a5ab540"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar Por ID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/consulta/82271843-530c-4f90-afbc-579e542b6403",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"consulta",
+										"82271843-530c-4f90-afbc-579e542b6403"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar Consulta por ID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"data_consulta\": \"2023-09-10T14:30:00\",\n  \"tipo_tratamento\": \"tratamento\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://191.238.221.61:8080/consulta/82271843-530c-4f90-afbc-579e542b6403",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"consulta",
+										"82271843-530c-4f90-afbc-579e542b6403"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Consulta Por ID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/consulta/d89cf795-6e6a-4124-95f6-42173d21e70f",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"consulta",
+										"d89cf795-6e6a-4124-95f6-42173d21e70f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cadastar Consulta",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"paciente\": {\n\t\t\t\t\"cpf\": \"66852699019\"\n    },\n    \"dentista\": {\n        \"documento_dentista\": \"24603604019\"\n    },\n    \"data_consulta\": \"2023-10-10T14:30:00\",\n    \"tipo_tratamento\": \"Limpeza\",\n\t\"diagnostico\": {\n    \"id_diagnostico\": \"2f5380ee-79ce-4b56-8038-5f6dd1701588\"\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://191.238.221.61:8080/consulta",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"consulta"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dentista",
+					"item": [
+						{
+							"name": "Deletar Dentista Por ID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/dentista/",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"dentista",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar Dentista",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome_dentista\": \"Dr. ricardinho\",\n    \"especializacao\": \"Especialista\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://191.238.221.61:8080/dentista/3e5b4545-5acb-4249-a003-d9d17ee37e22",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"dentista",
+										"3e5b4545-5acb-4249-a003-d9d17ee37e22"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buscar Dentista Por ID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/dentista/227b892a-b2c4-4915-9703-b7b5131b8980",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"dentista",
+										"227b892a-b2c4-4915-9703-b7b5131b8980"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Lista Dentista",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/dentista",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"dentista"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cadastra Dentista",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome_dentista\": \"Dr. Maria Oliveira\",\n\t\t\"documento_dentista\": \"24603604019\",\n    \"especializacao\": \"Ortodontia\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://191.238.221.61:8080/dentista",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"dentista"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Paciente",
+					"item": [
+						{
+							"name": "Deletar por ID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/paciente/e42f1fa0-ed23-403c-9fa3-d4a2edadf0e7",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"paciente",
+										"e42f1fa0-ed23-403c-9fa3-d4a2edadf0e7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Buscar Paciente por ID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/paciente/12c16a86-5d98-4f53-94d6-98742886dde9",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"paciente",
+										"12c16a86-5d98-4f53-94d6-98742886dde9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "atualizar paciente",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Keven Ike\"\t\n}\n         ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://191.238.221.61:8080/paciente/cbc9b536-e5aa-4c26-ae4f-129ea3116c89",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"paciente",
+										"cbc9b536-e5aa-4c26-ae4f-129ea3116c89"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listar Paciente",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": {
+									"raw": "http://191.238.221.61:8080/paciente",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"paciente"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cadastrar Paciente",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"followRedirects": true,
+								"disableUrlEncoding": false,
+								"disableCookies": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Luiz delicinha\",\n\t\t\"cpf\": \"66852699019\",\n    \"data_nascimento\": \"2002-08-11\"\n}\n         ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://191.238.221.61:8080/paciente",
+									"protocol": "http",
+									"host": [
+										"191",
+										"238",
+										"221",
+										"61"
+									],
+									"port": "8080",
+									"path": [
+										"paciente"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
