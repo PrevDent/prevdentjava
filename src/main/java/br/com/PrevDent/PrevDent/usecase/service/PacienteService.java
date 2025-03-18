@@ -17,6 +17,6 @@ public interface PacienteService {
 
     Paciente buscarPaciente(String id);
 
-    String ValidarLogin(String cpf, String senhaDigitada);
+    String ValidarLogin(String email, String senhaDigitada);
 
 }

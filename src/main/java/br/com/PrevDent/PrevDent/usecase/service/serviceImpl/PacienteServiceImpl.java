@@ -116,8 +116,8 @@ public class PacienteServiceImpl implements PacienteService {
 
 
     @Override
-    public String ValidarLogin(String cpf, String senhaDigitada) {
-        PacienteEntity pacienteEntity = pacientePortOut.findByCpf(cpf);
+    public String ValidarLogin(String email, String senhaDigitada) {
+        PacienteEntity pacienteEntity = pacientePortOut.findByEmail(email);
 
         if (pacienteEntity == null) {
             throw new UsernameNotFoundException("Paciente não encontrado");

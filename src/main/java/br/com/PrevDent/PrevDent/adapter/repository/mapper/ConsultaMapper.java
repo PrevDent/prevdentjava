@@ -25,7 +25,7 @@ public class ConsultaMapper {
 
 
         if (consulta.getPaciente() != null) {
-            consultaEntity.setPaciente(pacienteMapper.converterPacienteEntity(consulta.getPaciente()));
+            consultaEntity.setPaciente(pacienteMapper.converterPacienteConsultaEntity(consulta.getPaciente()));
         }
 
         if (consulta.getDentista() != null) {

@@ -1,5 +1,6 @@
 package br.com.PrevDent.PrevDent.adapter.http.dto.mapper;
 
+import br.com.PrevDent.PrevDent.adapter.http.dto.request.PacienteCreateConsultaRequest;
 import br.com.PrevDent.PrevDent.adapter.http.dto.request.PacienteCreateRequest;
 import br.com.PrevDent.PrevDent.adapter.http.dto.request.PacienteLoginRequest;
 import br.com.PrevDent.PrevDent.adapter.http.dto.request.PacienteUpdateRequest;
@@ -13,10 +14,19 @@ public class PacienteDtoMapper {
     public Paciente converterPacienteDto(PacienteCreateRequest pacienteCreateRequest) {
         Paciente paciente = new Paciente();
         paciente.setNome(pacienteCreateRequest.getNome());
+        paciente.setEmail(pacienteCreateRequest.getEmail());
         paciente.setCpf(pacienteCreateRequest.getCpf());
         paciente.setDataNascimento(pacienteCreateRequest.getDataNascimento());
         paciente.setSenha(pacienteCreateRequest.getSenha());
         paciente.setRole(pacienteCreateRequest.getRole());
+        return paciente;
+    }
+
+    public Paciente converterPacienteConsultaDto(PacienteCreateConsultaRequest pacienteCreateRequest) {
+        Paciente paciente = new Paciente();
+        paciente.setNome(pacienteCreateRequest.getNome());
+        paciente.setCpf(pacienteCreateRequest.getCpf());
+        paciente.setDataNascimento(pacienteCreateRequest.getDataNascimento());
         return paciente;
     }
 
@@ -37,7 +47,7 @@ public class PacienteDtoMapper {
 
     public Paciente converterPacienteLoginDto(PacienteLoginRequest pacienteLoginRequest) {
         Paciente paciente = new Paciente();
-        paciente.setCpf(pacienteLoginRequest.getCpf());
+        paciente.setEmail(pacienteLoginRequest.getEmail());
         paciente.setSenha(pacienteLoginRequest.getSenha());
         return paciente;
     }

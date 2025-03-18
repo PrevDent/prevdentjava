@@ -23,7 +23,7 @@ public class TokenService {
             Algorithm algorithm = Algorithm.HMAC256(secret);
             String token = JWT.create()
                     .withIssuer("prevdent-api")
-                    .withSubject(pacienteEntity.getCpf())
+                    .withSubject(pacienteEntity.getEmail())
                     .withExpiresAt(getExpirationTime())
                     .sign(algorithm);
             return token;

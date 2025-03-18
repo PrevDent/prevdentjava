@@ -5,5 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PacientePortOut extends JpaRepository<PacienteEntity, String> {
 
+     PacienteEntity findByEmail(String email);
+
      PacienteEntity findByCpf(String cpf);
 }

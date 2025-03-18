@@ -36,7 +36,7 @@ public class ConsultaController {
             @ApiResponse(responseCode = "200", description = "Consulta cadastrada com sucesso"),
             @ApiResponse(responseCode = "400", description = "Erro de validação na requisição")
     })
-    @PostMapping
+    @PostMapping("/cadastrar")
     public ResponseEntity<Consulta> cadastrarConsulta(@RequestBody @Valid ConsultaCreatRequest consultaCreateRequest) {
         Consulta consulta = consultaDtoMapper.criandoDtoParaConsulta(consultaCreateRequest);
 
@@ -48,7 +48,7 @@ public class ConsultaController {
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Lista de consultas retornada com sucesso")
     })
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE )
     public ResponseEntity<List<Consulta>> listarConsultas() {
         List<Consulta> consultas = consultaService.listarConsultas();
         return ResponseEntity.ok(consultas);

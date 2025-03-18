@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl
-    username: "RM553215"
-    password: "160701"
+    username: "RM553844"
+    password: "020705"
     driver-class-name: oracle.jdbc.OracleDriver
   jpa:
     hibernate:
@@ -10,7 +10,7 @@ spring:
 
 api:
   security:
-    token:
-      secret: ${JWT_SECRET:my-secret-key}
+    jwt:
+      secret: your_secret_key_here
 
 

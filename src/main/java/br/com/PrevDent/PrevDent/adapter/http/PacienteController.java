@@ -60,7 +60,7 @@ public class PacienteController {
     @PostMapping("/login")
     public ResponseEntity<Map<String, String>> login(@RequestBody @Valid PacienteLoginRequest pacienteLoginRequest){
 
-        String token = pacienteService.ValidarLogin(pacienteLoginRequest.getCpf(), pacienteLoginRequest.getSenha());
+        String token = pacienteService.ValidarLogin(pacienteLoginRequest.getEmail(), pacienteLoginRequest.getSenha());
 
         Map<String, String> response = new HashMap<>();
         response.put("token", token);

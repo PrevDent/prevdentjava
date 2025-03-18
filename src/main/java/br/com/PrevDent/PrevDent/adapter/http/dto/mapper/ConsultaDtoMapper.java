@@ -25,7 +25,7 @@ public class ConsultaDtoMapper {
         consulta.setData(consultaCreatRequest.getData());
         consulta.setTipoTratamento(consultaCreatRequest.getTipoTratamento());
 
-        consulta.setPaciente(pacienteDtoMapper.converterPacienteDto(consultaCreatRequest.getPaciente()));
+        consulta.setPaciente(pacienteDtoMapper.converterPacienteConsultaDto(consultaCreatRequest.getPaciente()));
         consulta.setDentista(dentistaDtoMapper.createDentista(consultaCreatRequest.getDentista()));
 
         consulta.setDiagnostico(diagnosticoDtoMapper.converteCreateDiagnostico(consultaCreatRequest.getDiagnostico()));

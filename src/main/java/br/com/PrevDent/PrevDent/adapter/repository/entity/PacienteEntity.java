@@ -1,6 +1,7 @@
 package br.com.PrevDent.PrevDent.adapter.repository.entity;
 
 import br.com.PrevDent.PrevDent.domain.user.PacienteUserRole;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,6 +27,9 @@ public class PacienteEntity implements UserDetails {
     @Column(name = "nome", nullable = false)
     private String nome;
 
+    @Column(name = "email", nullable = false)
+    private String email;
+
     @Column(name = "cpf", nullable = false )
     private String cpf;
 
@@ -33,8 +37,10 @@ public class PacienteEntity implements UserDetails {
     private String dataNascimento;
 
     @Column(name = "senha", nullable = false)
+    @JsonIgnore
     private String senha;
 
+    @JsonIgnore
     private PacienteUserRole role;
 
     @OneToMany(mappedBy = "paciente")
@@ -43,8 +49,13 @@ public class PacienteEntity implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         if (this.role == PacienteUserRole.Admin)
-            return List.of(new SimpleGrantedAuthority("ROLE_ADMIN"), new SimpleGrantedAuthority("ROLE_USER"));
-        else return List.of(new SimpleGrantedAuthority("ROLE_USER"));
+            return List.of(
+                    new SimpleGrantedAuthority("ROLE_ADMIN"),
+                    new SimpleGrantedAuthority("ROLE_USER")
+            );
+        else return List.of(
+                new SimpleGrantedAuthority("ROLE_USER")
+        );
     }
 
     @Override
@@ -54,7 +65,7 @@ public class PacienteEntity implements UserDetails {
 
     @Override
     public String getUsername() {
-        return cpf;
+        return email;
     }
 
     @Override

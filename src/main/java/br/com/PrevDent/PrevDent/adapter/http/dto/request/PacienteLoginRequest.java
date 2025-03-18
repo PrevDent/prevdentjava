@@ -7,9 +7,9 @@ import lombok.Data;
 @Data
 public class PacienteLoginRequest {
 
-    @JsonProperty("cpf")
-    @NotBlank(message = "CPF não pode estar vazio")
-    private String cpf;
+    @JsonProperty("email")
+    @NotBlank(message = "E-mail não pode estar vazio")
+    private String email;
 
     @JsonProperty("senha")
     @NotBlank(message = "Senha não pode estar vazia")

@@ -53,13 +53,18 @@ public class ConsultaServiceImpl implements ConsultaService {
     public void cadastrarConsulta(Consulta consulta) {
 
         PacienteEntity paciente = pacientePortOut.findByCpf(consulta.getPaciente().getCpf());
-        consulta.setPaciente(pacienteMapper.converterPaciente(paciente));
+        if (paciente == null) {
+            throw new RuntimeException("Paciente não encontrado");
+        }
+        consulta.setPaciente(pacienteMapper.converterPacienteConsulta(paciente));
+
 
         DentistaEntity dentista = dentistaPortOut.findByDocumento(consulta.getDentista().getDocumento());
         consulta.setDentista(dentistaMapper.converteDentista(dentista));
 
-        DiagnosticoEntity diagnotico = diagnosticoPortOut.findById(consulta.getDiagnostico().getIdDiagnostico()).get();
-        consulta.setDiagnostico(diagnosticoMapper.converteDiagnostico(diagnotico));
+        DiagnosticoEntity diagnostico = diagnosticoPortOut.findById(consulta.getDiagnostico().getIdDiagnostico())
+                .orElseThrow(() -> new RuntimeException("Diagnóstico não encontrado"));
+        consulta.setDiagnostico(diagnosticoMapper.converteDiagnostico(diagnostico));
 
         ConsultaEntity consultaEntity = consultaMapper.converteConsultaEntity(consulta);
 

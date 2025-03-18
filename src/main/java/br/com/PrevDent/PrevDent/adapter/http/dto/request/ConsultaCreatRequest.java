@@ -20,7 +20,7 @@ public class ConsultaCreatRequest {
 
     @JsonProperty("paciente")
     @NotNull(message = "O paciente é obrigatório.")
-    private PacienteCreateRequest paciente;
+    private PacienteCreateConsultaRequest paciente;
 
     @JsonProperty("dentista")
     @NotNull(message = "O dentista é obrigatório.")
