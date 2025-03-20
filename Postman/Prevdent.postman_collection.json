@@ -1,0 +1,3528 @@
+{
+	"info": {
+		"_postman_id": "a258bcac-e372-48fd-b23d-8e211fef6b11",
+		"name": "Prevdent",
+		"description": "HAR To Postman Generated Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36751202",
+		"_collection_link": "https://prevdent.postman.co/workspace/PrevDent-Workspace~8fdd4bf5-d495-4284-8417-1a546ecd0747/collection/37693470-a258bcac-e372-48fd-b23d-8e211fef6b11?action=share&source=collection_link&creator=36751202"
+	},
+	"item": [
+		{
+			"name": "cloud-java",
+			"item": [
+				{
+					"name": "paciente",
+					"item": [
+						{
+							"name": "localhost:8080/paciente/e42f1fa0-ed23-403c-9fa3-d4a2edadf0e7",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": "{{cloud-java-url}}/paciente/e42f1fa0-ed23-403c-9fa3-d4a2edadf0e7"
+							},
+							"response": [
+								{
+									"name": " / 401",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											}
+										],
+										"url": "{{baseURL1}}/paciente/e42f1fa0-ed23-403c-9fa3-d4a2edadf0e7"
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "WWW-Authenticate",
+											"value": "Bearer"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 08 Mar 2025 18:41:36 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/paciente/0de7256b-3f98-443f-b396-291122b646e9",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjE4NDU5NX0.ZiLCpH4ubeUazfffejNf07_IaBQMXtU_Cuy-0D9LitY"
+									}
+								],
+								"url": "{{cloud-java-url}}/paciente/0de7256b-3f98-443f-b396-291122b646e9"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjE4NDU5NX0.ZiLCpH4ubeUazfffejNf07_IaBQMXtU_Cuy-0D9LitY"
+											}
+										],
+										"url": "{{baseURL1}}/paciente/0de7256b-3f98-443f-b396-291122b646e9"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/hal+json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Mar 2025 02:12:34 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "application/hal+json content type is not supported in the response body"
+								}
+							]
+						},
+						{
+							"name": "atualizar paciente",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": "{{cloud-java-url}}/paciente/2739fd60-0433-44ee-8236-8daee3934bbc"
+							},
+							"response": [
+								{
+									"name": "forbidden / 403",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											}
+										],
+										"url": "{{baseURL1}}/paciente/2739fd60-0433-44ee-8236-8daee3934bbc"
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 09 Mar 2025 05:20:51 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/paciente",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjE4NDU5NX0.ZiLCpH4ubeUazfffejNf07_IaBQMXtU_Cuy-0D9LitY"
+									}
+								],
+								"url": "{{cloud-java-url}}/paciente"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjE4NDU5NX0.ZiLCpH4ubeUazfffejNf07_IaBQMXtU_Cuy-0D9LitY"
+											}
+										],
+										"url": "{{baseURL1}}/paciente"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Mar 2025 02:12:01 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"_embedded\": {\n  \"pacienteList\": [\n   {\n    \"idPaciente\": \"0de7256b-3f98-443f-b396-291122b646e9\",\n    \"nome\": \"keven\",\n    \"email\": \"keven@silva\",\n    \"cpf\": \"50326385878\",\n    \"dataNascimento\": \"2002-08-11\",\n    \"senha\": null,\n    \"role\": null,\n    \"_links\": {\n     \"self\": {\n      \"href\": \"http://localhost:8080/paciente/0de7256b-3f98-443f-b396-291122b646e9\"\n     },\n     \"pacientes\": {\n      \"href\": \"http://localhost:8080/paciente\"\n     }\n    }\n   }\n  ]\n },\n \"_links\": {\n  \"self\": {\n   \"href\": \"http://localhost:8080/paciente\"\n  }\n }\n}"
+								}
+							]
+						},
+						{
+							"name": "cadastrar paciente",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": "{{cloud-java-url}}/paciente/cadastrar"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											}
+										],
+										"url": "{{baseURL1}}/paciente/cadastrar"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 20 Mar 2025 02:35:29 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idPaciente\": \"25c659a7-bdc8-49b6-9093-24ae6e0fe19f\",\n \"nome\": \"keven\",\n \"cpf\": \"50326385878\",\n \"dataNascimento\": \"2002-08-11\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "dentista",
+					"item": [
+						{
+							"name": "localhost:8080/dentista/",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+									}
+								],
+								"url": "{{cloud-java-url}}/dentista/"
+							},
+							"response": [
+								{
+									"name": "no response code found",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+											}
+										],
+										"url": "{{baseURL1}}/dentista/"
+									},
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/dentista/3e5b4545-5acb-4249-a003-d9d17ee37e22",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+									}
+								],
+								"url": "{{cloud-java-url}}/dentista/3e5b4545-5acb-4249-a003-d9d17ee37e22"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+											}
+										],
+										"url": "{{baseURL1}}/dentista/3e5b4545-5acb-4249-a003-d9d17ee37e22"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 02 Oct 2024 03:40:39 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idDentista\": \"05fc665f-c843-4907-90d8-81287c85fd81\",\n \"nome\": \"Dr. ricardinho\",\n \"especializacao\": \"Especialista\"\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/dentista/227b892a-b2c4-4915-9703-b7b5131b8980",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+									}
+								],
+								"url": "{{cloud-java-url}}/dentista/227b892a-b2c4-4915-9703-b7b5131b8980"
+							},
+							"response": [
+								{
+									"name": " / 401",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+											}
+										],
+										"url": "{{baseURL1}}/dentista/227b892a-b2c4-4915-9703-b7b5131b8980"
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "WWW-Authenticate",
+											"value": "Bearer"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 06 Mar 2025 02:05:25 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/dentista",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+									}
+								],
+								"url": "{{cloud-java-url}}/dentista"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+											}
+										],
+										"url": "{{baseURL1}}/dentista"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 14 Mar 2025 00:44:06 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "[\n {\n  \"idDentista\": \"f802b62b-ab97-4dee-a275-c0f010e8ad21\",\n  \"nome\": \"Dr. Maria Oliveira\",\n  \"documento\": \"24603604019\",\n  \"especializacao\": \"Ortodontia\"\n }\n]"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/dentista",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+									}
+								],
+								"url": "{{cloud-java-url}}/dentista"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+											}
+										],
+										"url": "{{baseURL1}}/dentista"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 20 Mar 2025 02:35:34 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idDentista\": \"f1f34d05-b155-47eb-a5fa-17fd61edaf16\",\n \"nome\": \"Dr. jose neto\",\n \"documento\": \"24603604019\",\n \"especializacao\": \"Ortodontia\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "novos-registros",
+					"item": [
+						{
+							"name": "localhost:8080/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed"
+							},
+							"response": [
+								{
+									"name": "no-content / 204",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.1.1"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed"
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 02 Nov 2024 18:58:05 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.1.1"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 02 Nov 2024 18:57:05 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idRegistro\": \"1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed\",\n \"tipo\": \"dor\",\n \"ocorrencia\": \"boca\",\n \"intensidade\": \"intensa\",\n \"informacoesAdicionais\": \"Descrição adicional sobre a dor e circunstâncias\"\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/novos-registros/2d288586-7a14-42bb-a3cf-d55603e8f0d7",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/novos-registros/2d288586-7a14-42bb-a3cf-d55603e8f0d7"
+							},
+							"response": [
+								{
+									"name": " / 401",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.1.1"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/novos-registros/2d288586-7a14-42bb-a3cf-d55603e8f0d7"
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "WWW-Authenticate",
+											"value": "Bearer"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 06 Mar 2025 02:05:03 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/novos-registros/cadastrar",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/novos-registros/cadastrar"
+							},
+							"response": [
+								{
+									"name": " / 401",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.1.1"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/novos-registros/cadastrar"
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "WWW-Authenticate",
+											"value": "Bearer"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 08 Mar 2025 19:42:29 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "diagnostico",
+					"item": [
+						{
+							"name": "localhost:8080/diagnostico/07c0ba7e-ee0a-44c6-abc4-db63a194591d",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/diagnostico/07c0ba7e-ee0a-44c6-abc4-db63a194591d"
+							},
+							"response": [
+								{
+									"name": "no-content / 204",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/diagnostico/07c0ba7e-ee0a-44c6-abc4-db63a194591d"
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sun, 06 Oct 2024 03:14:46 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/diagnostico/b98653a9-9a03-44b4-a93a-afe7870ba576",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/diagnostico/b98653a9-9a03-44b4-a93a-afe7870ba576"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/diagnostico/b98653a9-9a03-44b4-a93a-afe7870ba576"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 06 Oct 2024 03:47:36 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idDiagnostico\": \"b98653a9-9a03-44b4-a93a-afe7870ba576\",\n \"descricao\": \"Diagnóstico atualizado agora\",\n \"recomendacao\": \"atualizado agora\"\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/diagnostico/9b7412fb-4f7d-477d-9e78-7160ece939de",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/diagnostico/9b7412fb-4f7d-477d-9e78-7160ece939de"
+							},
+							"response": [
+								{
+									"name": "not found / 404",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/diagnostico/9b7412fb-4f7d-477d-9e78-7160ece939de"
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 06 Oct 2024 20:32:58 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"mensagem\": \"Não existe um Diagnostico com este ID\"\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/diagnostico",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+									}
+								],
+								"url": "{{cloud-java-url}}/diagnostico"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+											}
+										],
+										"url": "{{baseURL1}}/diagnostico"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 20 Mar 2025 02:35:38 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idDiagnostico\": \"dc081a4b-58ce-4191-8200-c0757e15d38e\",\n \"descricao\": \"Diagnóstico de cárie dentária em estágio inicial.\",\n \"recomendacao\": \"Realizar escovação frequente e agendar uma consulta para aplicação de flúor.\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "consulta",
+					"item": [
+						{
+							"name": "localhost:8080/consulta/82271843-530c-4f90-afbc-579e542b6403",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/consulta/82271843-530c-4f90-afbc-579e542b6403"
+							},
+							"response": [
+								{
+									"name": "no-content / 204",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/consulta/82271843-530c-4f90-afbc-579e542b6403"
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 05 Oct 2024 23:54:06 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/consulta/82271843-530c-4f90-afbc-579e542b6403",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/consulta/82271843-530c-4f90-afbc-579e542b6403"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/consulta/82271843-530c-4f90-afbc-579e542b6403"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 05 Oct 2024 23:53:04 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idConsulta\": \"59773a57-350f-4432-9107-30297389a557\",\n \"paciente\": null,\n \"dentista\": null,\n \"data\": \"2023-09-10T14:30:00.000+00:00\",\n \"tipoTratamento\": \"tratamento\",\n \"diagnostico\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/consulta",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/consulta"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/consulta"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 18 Mar 2025 03:01:08 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "[\n {\n  \"idConsulta\": \"ebff7243-67a7-4846-9904-a462c4097e06\",\n  \"paciente\": {\n   \"idPaciente\": \"26958d13-60f8-414c-bafe-431b8595b0b1\",\n   \"nome\": \"keven\",\n   \"cpf\": \"50326385878\",\n   \"dataNascimento\": \"2002-08-11\"\n  },\n  \"dentista\": {\n   \"idDentista\": \"66cbb106-a60c-452c-a04a-a4153e58d619\",\n   \"nome\": \"Dr. Maria Oliveira\",\n   \"documento\": \"24603604019\",\n   \"especializacao\": \"Ortodontia\"\n  },\n  \"data\": \"2023-10-10T14:30:00.000+00:00\",\n  \"tipoTratamento\": \"Limpeza\",\n  \"diagnostico\": {\n   \"idDiagnostico\": \"cc7adaa2-8702-4146-aea1-64af56ec281a\",\n   \"descricao\": \"Diagnóstico de cárie dentária em estágio inicial.\",\n   \"recomendacao\": \"Realizar escovação frequente e agendar uma consulta para aplicação de flúor.\"\n  }\n }\n]"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/consulta/cadastrar",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+									}
+								],
+								"url": "{{cloud-java-url}}/consulta/cadastrar"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+											}
+										],
+										"url": "{{baseURL1}}/consulta/cadastrar"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 20 Mar 2025 02:35:47 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idConsulta\": \"14434d17-5b52-4993-b39a-5fff6c977818\",\n \"paciente\": {\n  \"idPaciente\": \"25c659a7-bdc8-49b6-9093-24ae6e0fe19f\",\n  \"nome\": \"keven\",\n  \"cpf\": \"50326385878\",\n  \"dataNascimento\": \"2002-08-11\"\n },\n \"dentista\": {\n  \"idDentista\": \"f1f34d05-b155-47eb-a5fa-17fd61edaf16\",\n  \"nome\": \"Dr. jose neto\",\n  \"documento\": \"24603604019\",\n  \"especializacao\": \"Ortodontia\"\n },\n \"data\": \"2023-10-10T14:30:00.000+00:00\",\n \"tipoTratamento\": \"Limpeza\",\n \"diagnostico\": {\n  \"idDiagnostico\": \"dc081a4b-58ce-4191-8200-c0757e15d38e\",\n  \"descricao\": \"Diagnóstico de cárie dentária em estágio inicial.\",\n  \"recomendacao\": \"Realizar escovação frequente e agendar uma consulta para aplicação de flúor.\"\n }\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/consulta",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{cloud-java-url}}/consulta"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.1.1"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/consulta"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 18 Mar 2025 03:49:08 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "[\n {\n  \"idConsulta\": \"19774e54-aaf9-415d-ab92-ca758b7ecf52\",\n  \"paciente\": {\n   \"idPaciente\": \"6b01d3c6-f04e-4432-980f-98d7fa70d3e7\",\n   \"nome\": \"keven\",\n   \"cpf\": \"50326385878\",\n   \"dataNascimento\": \"2002-08-11\"\n  },\n  \"dentista\": {\n   \"idDentista\": \"49f78f37-cca1-482f-9506-55f68b08d9ba\",\n   \"nome\": \"Dr. Maria Oliveira\",\n   \"documento\": \"24603604019\",\n   \"especializacao\": \"Ortodontia\"\n  },\n  \"data\": \"2023-10-10T14:30:00.000+00:00\",\n  \"tipoTratamento\": \"Limpeza\",\n  \"diagnostico\": {\n   \"idDiagnostico\": \"0e084177-a815-4112-abe8-cb3409f32064\",\n   \"descricao\": \"Diagnóstico de cárie dentária em estágio inicial.\",\n   \"recomendacao\": \"Realizar escovação frequente e agendar uma consulta para aplicação de flúor.\"\n  }\n }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "login-paciente",
+					"item": [
+						{
+							"name": "localhost:8080/paciente/login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.3.1"
+									}
+								],
+								"url": "{{cloud-java-url}}paciente/login"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.3.1"
+											}
+										],
+										"url": "{{baseURL1}}/paciente/login"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 20 Mar 2025 02:35:31 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NTMzMX0.F4xYjFmXbGkSEYnUfCKblakhWRkVMRz7bXr--illRcg\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "local-java",
+			"item": [
+				{
+					"name": "paciente",
+					"item": [
+						{
+							"name": "localhost:8080/paciente/e42f1fa0-ed23-403c-9fa3-d4a2edadf0e7",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": "{{local8080-url}}/paciente/e42f1fa0-ed23-403c-9fa3-d4a2edadf0e7"
+							},
+							"response": [
+								{
+									"name": " / 401",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											}
+										],
+										"url": "{{baseURL1}}/paciente/e42f1fa0-ed23-403c-9fa3-d4a2edadf0e7"
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "WWW-Authenticate",
+											"value": "Bearer"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 08 Mar 2025 18:41:36 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/paciente/0de7256b-3f98-443f-b396-291122b646e9",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjE4NDU5NX0.ZiLCpH4ubeUazfffejNf07_IaBQMXtU_Cuy-0D9LitY"
+									}
+								],
+								"url": "{{local8080-url}}/paciente/0de7256b-3f98-443f-b396-291122b646e9"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjE4NDU5NX0.ZiLCpH4ubeUazfffejNf07_IaBQMXtU_Cuy-0D9LitY"
+											}
+										],
+										"url": "{{baseURL1}}/paciente/0de7256b-3f98-443f-b396-291122b646e9"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/hal+json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Mar 2025 02:12:34 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "application/hal+json content type is not supported in the response body"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/paciente/2739fd60-0433-44ee-8236-8daee3934bbc",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": "{{local8080-url}}/paciente/2739fd60-0433-44ee-8236-8daee3934bbc"
+							},
+							"response": [
+								{
+									"name": "forbidden / 403",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											}
+										],
+										"url": "{{baseURL1}}/paciente/2739fd60-0433-44ee-8236-8daee3934bbc"
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 09 Mar 2025 05:20:51 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/paciente",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjE4NDU5NX0.ZiLCpH4ubeUazfffejNf07_IaBQMXtU_Cuy-0D9LitY"
+									}
+								],
+								"url": "{{local8080-url}}/paciente"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjE4NDU5NX0.ZiLCpH4ubeUazfffejNf07_IaBQMXtU_Cuy-0D9LitY"
+											}
+										],
+										"url": "{{baseURL1}}/paciente"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 17 Mar 2025 02:12:01 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"_embedded\": {\n  \"pacienteList\": [\n   {\n    \"idPaciente\": \"0de7256b-3f98-443f-b396-291122b646e9\",\n    \"nome\": \"keven\",\n    \"email\": \"keven@silva\",\n    \"cpf\": \"50326385878\",\n    \"dataNascimento\": \"2002-08-11\",\n    \"senha\": null,\n    \"role\": null,\n    \"_links\": {\n     \"self\": {\n      \"href\": \"http://localhost:8080/paciente/0de7256b-3f98-443f-b396-291122b646e9\"\n     },\n     \"pacientes\": {\n      \"href\": \"http://localhost:8080/paciente\"\n     }\n    }\n   }\n  ]\n },\n \"_links\": {\n  \"self\": {\n   \"href\": \"http://localhost:8080/paciente\"\n  }\n }\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/paciente/cadastrar",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									}
+								],
+								"url": "{{baseURL1}}/paciente/cadastrar"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											}
+										],
+										"url": "{{baseURL1}}/paciente/cadastrar"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 20 Mar 2025 02:35:29 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idPaciente\": \"25c659a7-bdc8-49b6-9093-24ae6e0fe19f\",\n \"nome\": \"keven\",\n \"cpf\": \"50326385878\",\n \"dataNascimento\": \"2002-08-11\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "dentista",
+					"item": [
+						{
+							"name": "localhost:8080/dentista/",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+									}
+								],
+								"url": "{{local8080-url}}/dentista/"
+							},
+							"response": [
+								{
+									"name": "no response code found",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+											}
+										],
+										"url": "{{baseURL1}}/dentista/"
+									},
+									"_postman_previewlanguage": "Text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/dentista/3e5b4545-5acb-4249-a003-d9d17ee37e22",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+									}
+								],
+								"url": "{{local8080-url}}/dentista/3e5b4545-5acb-4249-a003-d9d17ee37e22"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+											}
+										],
+										"url": "{{baseURL1}}/dentista/3e5b4545-5acb-4249-a003-d9d17ee37e22"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 02 Oct 2024 03:40:39 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idDentista\": \"05fc665f-c843-4907-90d8-81287c85fd81\",\n \"nome\": \"Dr. ricardinho\",\n \"especializacao\": \"Especialista\"\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/dentista/227b892a-b2c4-4915-9703-b7b5131b8980",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+									}
+								],
+								"url": "{{local8080-url}}/dentista/227b892a-b2c4-4915-9703-b7b5131b8980"
+							},
+							"response": [
+								{
+									"name": " / 401",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+											}
+										],
+										"url": "{{baseURL1}}/dentista/227b892a-b2c4-4915-9703-b7b5131b8980"
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "WWW-Authenticate",
+											"value": "Bearer"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 06 Mar 2025 02:05:25 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/dentista",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+									}
+								],
+								"url": "{{local8080-url}}/dentista"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiI1MDMyNjM4NTg3OCIsImV4cCI6MTc0MTkyMDE4Mn0.P84NaJ_jxZWTqNGSYonVaNPYHrs3lcKiuL5P3rUzY2U"
+											}
+										],
+										"url": "{{baseURL1}}/dentista"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 14 Mar 2025 00:44:06 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "[\n {\n  \"idDentista\": \"f802b62b-ab97-4dee-a275-c0f010e8ad21\",\n  \"nome\": \"Dr. Maria Oliveira\",\n  \"documento\": \"24603604019\",\n  \"especializacao\": \"Ortodontia\"\n }\n]"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/dentista",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+									}
+								],
+								"url": "{{local8080-url}}/dentista"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+											}
+										],
+										"url": "{{baseURL1}}/dentista"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 20 Mar 2025 02:35:34 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idDentista\": \"f1f34d05-b155-47eb-a5fa-17fd61edaf16\",\n \"nome\": \"Dr. jose neto\",\n \"documento\": \"24603604019\",\n \"especializacao\": \"Ortodontia\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "novos-registros",
+					"item": [
+						{
+							"name": "Deletar Registro",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed"
+							},
+							"response": [
+								{
+									"name": "no-content / 204",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.1.1"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed"
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 02 Nov 2024 18:58:05 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Atualizar Registro",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.1.1"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/novos-registros/1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 02 Nov 2024 18:57:05 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idRegistro\": \"1ce0af27-f8e2-46cf-b7c5-72dfa98d57ed\",\n \"tipo\": \"dor\",\n \"ocorrencia\": \"boca\",\n \"intensidade\": \"intensa\",\n \"informacoesAdicionais\": \"Descrição adicional sobre a dor e circunstâncias\"\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/novos-registros/2d288586-7a14-42bb-a3cf-d55603e8f0d7",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/novos-registros/2d288586-7a14-42bb-a3cf-d55603e8f0d7"
+							},
+							"response": [
+								{
+									"name": " / 401",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.1.1"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/novos-registros/2d288586-7a14-42bb-a3cf-d55603e8f0d7"
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "WWW-Authenticate",
+											"value": "Bearer"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 06 Mar 2025 02:05:03 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/novos-registros/cadastrar",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/novos-registros/cadastrar"
+							},
+							"response": [
+								{
+									"name": " / 401",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.1.1"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/novos-registros/cadastrar"
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "WWW-Authenticate",
+											"value": "Bearer"
+										},
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Length",
+											"value": "0"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 08 Mar 2025 19:42:29 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "diagnostico",
+					"item": [
+						{
+							"name": "localhost:8080/diagnostico/07c0ba7e-ee0a-44c6-abc4-db63a194591d",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/diagnostico/07c0ba7e-ee0a-44c6-abc4-db63a194591d"
+							},
+							"response": [
+								{
+									"name": "no-content / 204",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/diagnostico/07c0ba7e-ee0a-44c6-abc4-db63a194591d"
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sun, 06 Oct 2024 03:14:46 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/diagnostico/b98653a9-9a03-44b4-a93a-afe7870ba576",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/diagnostico/b98653a9-9a03-44b4-a93a-afe7870ba576"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/diagnostico/b98653a9-9a03-44b4-a93a-afe7870ba576"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 06 Oct 2024 03:47:36 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idDiagnostico\": \"b98653a9-9a03-44b4-a93a-afe7870ba576\",\n \"descricao\": \"Diagnóstico atualizado agora\",\n \"recomendacao\": \"atualizado agora\"\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/diagnostico/9b7412fb-4f7d-477d-9e78-7160ece939de",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/diagnostico/9b7412fb-4f7d-477d-9e78-7160ece939de"
+							},
+							"response": [
+								{
+									"name": "not found / 404",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/diagnostico/9b7412fb-4f7d-477d-9e78-7160ece939de"
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 06 Oct 2024 20:32:58 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"mensagem\": \"Não existe um Diagnostico com este ID\"\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/diagnostico",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+									}
+								],
+								"url": "{{local8080-url}}/diagnostico"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+											}
+										],
+										"url": "{{baseURL1}}/diagnostico"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 20 Mar 2025 02:35:38 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idDiagnostico\": \"dc081a4b-58ce-4191-8200-c0757e15d38e\",\n \"descricao\": \"Diagnóstico de cárie dentária em estágio inicial.\",\n \"recomendacao\": \"Realizar escovação frequente e agendar uma consulta para aplicação de flúor.\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "consulta",
+					"item": [
+						{
+							"name": "localhost:8080/consulta/82271843-530c-4f90-afbc-579e542b6403",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/consulta/82271843-530c-4f90-afbc-579e542b6403"
+							},
+							"response": [
+								{
+									"name": "no-content / 204",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/consulta/82271843-530c-4f90-afbc-579e542b6403"
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "Text",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 05 Oct 2024 23:54:06 GMT"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/consulta/82271843-530c-4f90-afbc-579e542b6403",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/consulta/82271843-530c-4f90-afbc-579e542b6403"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/consulta/82271843-530c-4f90-afbc-579e542b6403"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 05 Oct 2024 23:53:04 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idConsulta\": \"59773a57-350f-4432-9107-30297389a557\",\n \"paciente\": null,\n \"dentista\": null,\n \"data\": \"2023-09-10T14:30:00.000+00:00\",\n \"tipoTratamento\": \"tratamento\",\n \"diagnostico\": null\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/consulta",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/consulta"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/consulta"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 18 Mar 2025 03:01:08 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "[\n {\n  \"idConsulta\": \"ebff7243-67a7-4846-9904-a462c4097e06\",\n  \"paciente\": {\n   \"idPaciente\": \"26958d13-60f8-414c-bafe-431b8595b0b1\",\n   \"nome\": \"keven\",\n   \"cpf\": \"50326385878\",\n   \"dataNascimento\": \"2002-08-11\"\n  },\n  \"dentista\": {\n   \"idDentista\": \"66cbb106-a60c-452c-a04a-a4153e58d619\",\n   \"nome\": \"Dr. Maria Oliveira\",\n   \"documento\": \"24603604019\",\n   \"especializacao\": \"Ortodontia\"\n  },\n  \"data\": \"2023-10-10T14:30:00.000+00:00\",\n  \"tipoTratamento\": \"Limpeza\",\n  \"diagnostico\": {\n   \"idDiagnostico\": \"cc7adaa2-8702-4146-aea1-64af56ec281a\",\n   \"descricao\": \"Diagnóstico de cárie dentária em estágio inicial.\",\n   \"recomendacao\": \"Realizar escovação frequente e agendar uma consulta para aplicação de flúor.\"\n  }\n }\n]"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/consulta/cadastrar",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.0.0"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+									}
+								],
+								"url": "{{local8080-url}}/consulta/cadastrar"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.0.0"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NDcxNX0.vTQDIiP0rfV5Pl2BuhgSThq4ClDjbRKMjCUvAHXidjk"
+											}
+										],
+										"url": "{{baseURL1}}/consulta/cadastrar"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 20 Mar 2025 02:35:47 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"idConsulta\": \"14434d17-5b52-4993-b39a-5fff6c977818\",\n \"paciente\": {\n  \"idPaciente\": \"25c659a7-bdc8-49b6-9093-24ae6e0fe19f\",\n  \"nome\": \"keven\",\n  \"cpf\": \"50326385878\",\n  \"dataNascimento\": \"2002-08-11\"\n },\n \"dentista\": {\n  \"idDentista\": \"f1f34d05-b155-47eb-a5fa-17fd61edaf16\",\n  \"nome\": \"Dr. jose neto\",\n  \"documento\": \"24603604019\",\n  \"especializacao\": \"Ortodontia\"\n },\n \"data\": \"2023-10-10T14:30:00.000+00:00\",\n \"tipoTratamento\": \"Limpeza\",\n \"diagnostico\": {\n  \"idDiagnostico\": \"dc081a4b-58ce-4191-8200-c0757e15d38e\",\n  \"descricao\": \"Diagnóstico de cárie dentária em estágio inicial.\",\n  \"recomendacao\": \"Realizar escovação frequente e agendar uma consulta para aplicação de flúor.\"\n }\n}"
+								}
+							]
+						},
+						{
+							"name": "localhost:8080/consulta",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.1.1"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+									}
+								],
+								"url": "{{local8080-url}}/consulta"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.1.1"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJqYW9Ac2lsdmEiLCJleHAiOjE3NDIyNzg3MjV9.5vIZKALS5lGeeQEit-k3q1_W7mkYpzjtJa4_WCeu5BY"
+											}
+										],
+										"url": "{{baseURL1}}/consulta"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 18 Mar 2025 03:49:08 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "[\n {\n  \"idConsulta\": \"19774e54-aaf9-415d-ab92-ca758b7ecf52\",\n  \"paciente\": {\n   \"idPaciente\": \"6b01d3c6-f04e-4432-980f-98d7fa70d3e7\",\n   \"nome\": \"keven\",\n   \"cpf\": \"50326385878\",\n   \"dataNascimento\": \"2002-08-11\"\n  },\n  \"dentista\": {\n   \"idDentista\": \"49f78f37-cca1-482f-9506-55f68b08d9ba\",\n   \"nome\": \"Dr. Maria Oliveira\",\n   \"documento\": \"24603604019\",\n   \"especializacao\": \"Ortodontia\"\n  },\n  \"data\": \"2023-10-10T14:30:00.000+00:00\",\n  \"tipoTratamento\": \"Limpeza\",\n  \"diagnostico\": {\n   \"idDiagnostico\": \"0e084177-a815-4112-abe8-cb3409f32064\",\n   \"descricao\": \"Diagnóstico de cárie dentária em estágio inicial.\",\n   \"recomendacao\": \"Realizar escovação frequente e agendar uma consulta para aplicação de flúor.\"\n  }\n }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "login-paciente",
+					"item": [
+						{
+							"name": "localhost:8080/paciente/login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "User-Agent",
+										"value": "insomnia/10.3.1"
+									}
+								],
+								"url": "{{local8080-url}}/paciente/login"
+							},
+							"response": [
+								{
+									"name": "successfully / 200",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "User-Agent",
+												"value": "insomnia/10.3.1"
+											}
+										],
+										"url": "{{baseURL1}}/paciente/login"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Content-Type-Options",
+											"value": "nosniff"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "0"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, no-store, max-age=0, must-revalidate"
+										},
+										{
+											"key": "Pragma",
+											"value": "no-cache"
+										},
+										{
+											"key": "Expires",
+											"value": "0"
+										},
+										{
+											"key": "X-Frame-Options",
+											"value": "DENY"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 20 Mar 2025 02:35:31 GMT"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmV2ZGVudC1hcGkiLCJzdWIiOiJrZXZlbkBzaWx2YSIsImV4cCI6MTc0MjQ0NTMzMX0.F4xYjFmXbGkSEYnUfCKblakhWRkVMRz7bXr--illRcg\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local8080-url",
+			"value": "http://localhost:8080",
+			"type": "any"
+		},
+		{
+			"key": "local8081-url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "cloud-java-url",
+			"value": "https://prevdent-java.azurewebsites.net/",
+			"type": "string"
+		},
+		{
+			"key": "cloud-mvc-url",
+			"value": "https://prevdent-mvc.azurewebsites.net/",
+			"type": "default"
+		}
+	]
+}
