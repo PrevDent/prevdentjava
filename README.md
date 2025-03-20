@@ -13,6 +13,115 @@
 
 O **OdontoPredict** é uma aplicação Java que utiliza análise preditiva para identificar comportamentos de risco em pacientes e dentistas. O sistema tem como objetivo antecipar a necessidade de intervenções preventivas na área de odontologia.
 
+# 🏥 Paciente API
+
+Base URL: `http://localhost:8080/paciente`
+
+| Método HTTP | Endpoint                  | Descrição                           | Corpo da Requisição (JSON)          | Resposta de Sucesso        | 
+|-------------|---------------------------|-------------------------------------|-------------------------------------|----------------------------|
+| GET         | `/`                       | Listar todos os pacientes           | —                                   | Array de pacientes         | 
+| GET         | `/{id}`                   | Buscar um paciente pelo ID          | —                                   | Objeto do paciente         | 
+| POST        | `/cadastrar`              | Criar um novo paciente              | `{ "nome": "...", "idade": 0 }`     | Objeto do paciente criado  |
+| POST        | `/login`                  | Login de paciente                   | `{ "email":"", "senha": ""}`        | `{ "token": "eyJhbGciO..."}|
+| PATCH       | `/{id}`                   | Atualizar dados de um paciente      | Campos parciais do paciente         | Objeto do paciente atuali..| 
+| DELETE      | `/{id}`                   | Remover um paciente pelo ID         | —                                   | —                          | 
+
+
+# 🦷 Dentista API
+
+Base URL: `http://localhost:8080/dentista`
+
+| Método HTTP | Endpoint                  | Descrição                           | Corpo da Requisição (JSON)      | Resposta de Sucesso             |
+|-------------|---------------------------|-------------------------------------|---------------------------------|---------------------------------|
+| GET         | `/`                       | Listar todos os dentistas           | —                               | Array de dentistas              | 
+| GET         | `/{id}`                   | Buscar um dentista pelo ID          | —                               | Objeto do dentista              | 
+| POST        | `/cadastrar`              | Criar um novo dentista              | `{ "nome": "...", "idade": 0 }` | Objeto do dentista criado       | 
+| PATCH       | `/{id}`                   | Atualizar dados de um dentista      | Campos parciais do dentista     | Objeto do dentista atualizado   | 
+| DELETE      | `/{id}`                   | Remover um dentista pelo ID         | —                               | —                               | 
+
+
+# 📅 Consulta API
+
+Base URL: `http://localhost:8080/consulta`
+
+| Método HTTP | Endpoint                  | Descrição                            | Corpo da Requisição (JSON)      | Resposta de Sucesso             | 
+|-------------|---------------------------|--------------------------------------|---------------------------------|---------------------------------|
+| GET         | `/`                       | Listar todas as consultas            | —                               | Array de consultas              | 
+| GET         | `/{id}`                   | Buscar uma consulta pelo ID          | —                               | Objeto da consulta              | 
+| POST        | `/cadastrar`              | Criar uma nova consulta              | `{ "data": "YYYY-MM-DD",}`      | Objeto da consulta criado       | 
+| PATCH       | `/{id}`                   | Atualizar dados de uma consulta      | Campos parciais da consulta     | Objeto da consulta atualizado   | 
+| DELETE      | `/{id}`                   | Remover uma consulta pelo ID         | —                               | —                               |
+
+
+# 🆕 Novos Registros API
+
+Base URL: `http://localhost:8080/novos-registros`
+
+| Método HTTP | Endpoint                  | Descrição                             | Corpo da Requisição (JSON)            | Resposta de Sucesso               | 
+|-------------|---------------------------|---------------------------------------|---------------------------------------|-----------------------------------|
+| GET         | `/`                       | Listar todos os novos registros       | —                                     | Array de registros                | 
+| GET         | `/{id}`                   | Buscar um registro pelo ID            | —                                     | Objeto do registro                |
+| POST        | `/cadastrar`              | Criar um novo registro                | `{ "nome": "...", "idade": 0 }`       | Objeto do registro criado         | 
+| PATCH       | `/{id}`                   | Atualizar dados de um registro        | Campos parciais do registro           | Objeto do registro atualizado     | 
+| DELETE      | `/{id}`                   | Remover um registro pelo ID           | —                                     | —                                 | 
+
+ 
+
+---
+
+# 📡 API nuvem
+
+Base URL: `https://prevdent-java.azurewebsites.net`
+
+---
+
+## 🏥 Paciente API
+
+| Método HTTP | Endpoint                  | Descrição                           | Corpo da Requisição (JSON)           | Resposta de Sucesso             | 
+|-------------|---------------------------|-------------------------------------|--------------------------------------|---------------------------------|
+| GET         | `/paciente/`              | Listar todos os pacientes           | —                                    | Array de pacientes              |
+| GET         | `/paciente/{id}`          | Buscar um paciente pelo ID          | —                                    | Objeto do paciente              | 
+| POST        | `/paciente/cadastrar`     | Criar um novo paciente              | `{ "nome": "...", "idade": 0 }`      | Objeto do paciente criado       | 
+| PATCH       | `/paciente/{id}`          | Atualizar dados de um paciente      | Campos parciais do paciente          | Objeto do paciente atualizado   | 
+| DELETE      | `/paciente/{id}`          | Remover um paciente pelo ID         | —                                    | —                               | 
+| POST        | `/paciente/login`         | Autenticar paciente (login)         | `{ "email": "...", "senha": "..." }` | `{ "token": "<JWT>" }`          | 
+
+---
+
+## 🦷 Dentista API
+
+| Método HTTP | Endpoint                  | Descrição                           | Corpo da Requisição (JSON)      | Resposta de Sucesso             | 
+|-------------|---------------------------|-------------------------------------|---------------------------------|---------------------------------|
+| GET         | `/dentista/`              | Listar todos os dentistas           | —                               | Array de dentistas              | 
+| GET         | `/dentista/{id}`          | Buscar um dentista pelo ID          | —                               | Objeto do dentista              | 
+| POST        | `/dentista/cadastrar`     | Criar um novo dentista              | `{ "nome": "...", "idade": 0 }` | Objeto do dentista criado       | 
+| PATCH       | `/dentista/{id}`          | Atualizar dados de um dentista      | Campos parciais do dentista     | Objeto do dentista atualizado   | 
+| DELETE      | `/dentista/{id}`          | Remover um dentista pelo ID         | —                               | —                               | 
+
+---
+
+## 📅 Consulta API
+
+| Método HTTP | Endpoint                  | Descrição                            | Corpo da Requisição (JSON)      | Resposta de Sucesso             | 
+|-------------|---------------------------|--------------------------------------|---------------------------------|---------------------------------|
+| GET         | `/consulta/`              | Listar todas as consultas            | —                               | Array de consultas              | 
+| GET         | `/consulta/{id}`          | Buscar uma consulta pelo ID          | —                               | Objeto da consulta              | 
+| POST        | `/consulta/cadastrar`     | Criar uma nova consulta              | `{ "data": "YYYY-MM-DD",  }`    | Objeto criado                   |
+| PATCH       | `/consulta/{id}`          | Atualizar dados de uma consulta      | Campos parciais da consulta     | Objeto atualizado               | 
+| DELETE      | `/consulta/{id}`          | Remover uma consulta pelo ID         | —                               | —                               | 
+
+---
+
+## 🆕 Novos Registros API
+
+| Método HTTP | Endpoint                         | Descrição                             | Corpo da Requisição (JSON)            | Resposta de Sucesso             | 
+|-------------|----------------------------------|---------------------------------------|---------------------------------------|---------------------------------|
+| GET         | `/novos-registros/`              | Listar todos os novos registros       | —                                     | Array de registros              | 
+| GET         | `/novos-registros/{id}`          | Buscar um registro pelo ID            | —                                     | Objeto do registro              |
+| POST        | `/novos-registros/cadastrar`     | Criar um novo registro                | `{ "nome": "...", "idade": 0 }`       | Objeto criado                  | 
+| PATCH       | `/novos-registros/{id}`          | Atualizar dados de um registro        | Campos parciais do registro           | Objeto atualizado               | 
+| DELETE      | `/novos-registros/{id}`          | Remover um registro pelo ID           | —                                     | —                               | 
+
 ## Tecnologias Utilizadas
 
 - Java
