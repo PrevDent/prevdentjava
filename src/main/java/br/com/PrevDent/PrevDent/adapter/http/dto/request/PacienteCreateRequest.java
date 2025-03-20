@@ -40,7 +40,7 @@ public class PacienteCreateRequest {
     @JsonProperty("senha")
     @NotBlank(message = "Senha não pode estar vazia")
     @Size(min = 6, message = "Senha deve ter no mínimo 6 caracteres")
-    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{6,}$",
+    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&!*+=])(?=\\S+$).{6,}$",
             message = "Senha deve conter ao menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial"
     )
     private String senha;
