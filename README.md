@@ -131,6 +131,27 @@ Base URL: `https://prevdent-java.azurewebsites.net`
 - Lombok
 
 
+## Deploy na nuvem (WebApp)
+
+##### 1 -> Clone o repositório principal  na maquina
+##### 2 -> Use o Intellj e baixe o plugin **Azure Toolkit for Intellj**
+##### 3 -> Faça login na sua conta Azure 
+##### 4 -> Selecione o Web App no dropdrown da extenção 
+##### 5 -> Clique com o botão direito e clique em Create
+##### 6 -> Insira o nome do seu web app
+##### 7 -> Em "Platform" selecione "Windows-Java 17-Java SE"
+##### 8 -> Ao criar, vá nos "Web Apps", botão direito e selecione "Deploy"
+##### 8 -> No modal que que irá abrir, só selecionar "Run"
+##### 9 -> Ao finalizar o deploy, apenas clicar na url e abrir no browser
+
+O back-end está neste link https://prevdent-java.azurewebsites.net/
+
+O front-end está nesse link: https://prevdent-mvc.azurewebsites.net/usuario/cadastro
+
+Para verificar requisições e itens no banco, usar as colections do postman que se encontram no projeto.
+
+
+
 
 ## Como rodar o projeto usando uma vm com Almalinux 9.04
 
@@ -218,4 +239,5 @@ O OdontoPredict busca oferecer uma estrutura robusta e eficiente para a identifi
 2. Certifique-se de ter o Java e o Maven instalados.
 3. Navegue até o diretório do projeto.
 4. Execute o comando `mvn spring-boot:run` para iniciar a aplicação.
+
 
