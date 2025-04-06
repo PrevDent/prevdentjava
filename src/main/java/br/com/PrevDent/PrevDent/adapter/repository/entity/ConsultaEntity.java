@@ -32,8 +32,8 @@ public class ConsultaEntity {
     @Column(name = "tipo_tratamento")
     private String tipoTratamento;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "diagnostico_id", referencedColumnName = "diagnostico_id")
+    @OneToOne(optional = true, cascade = CascadeType.ALL)
+    @JoinColumn(name = "diagnostico_id", referencedColumnName = "diagnostico_id", nullable = true)
     private DiagnosticoEntity diagnostico;
 
 }

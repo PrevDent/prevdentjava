@@ -49,7 +49,12 @@ public class ConsultaMapper {
 
         consulta.setPaciente(pacienteMapper.converterPaciente(consultaEntity.getPaciente()));
         consulta.setDentista(dentistaMapper.converteDentista(consultaEntity.getDentista()));
-        consulta.setDiagnostico(diagnosticoMapper.converteDiagnostico(consultaEntity.getDiagnostico()));
+
+        if (consultaEntity.getDiagnostico() != null) {
+            consulta.setDiagnostico(diagnosticoMapper.converteDiagnostico(consultaEntity.getDiagnostico()));
+        } else {
+            consulta.setDiagnostico(null);
+        }
 
         return consulta;
     }

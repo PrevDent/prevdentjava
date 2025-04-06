@@ -35,6 +35,5 @@ public class ConsultaCreatRequest {
     private String tipoTratamento;
 
     @JsonProperty("diagnostico")
-    @NotNull(message = "o Diagnostico é obrigatorio")
     private DiagnosticoCreateDto diagnostico;
 }
