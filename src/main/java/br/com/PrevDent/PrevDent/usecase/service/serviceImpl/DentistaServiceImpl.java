@@ -24,7 +24,9 @@ public class DentistaServiceImpl implements DentistaService {
 
     @Override
     public void cadastrarDentista(Dentista dentista) {
+
         DentistaEntity dentistaEntity = dentistaMapper.converteDentistaEntity(dentista);
+
         dentistaPortOut.save(dentistaEntity);
     }
 

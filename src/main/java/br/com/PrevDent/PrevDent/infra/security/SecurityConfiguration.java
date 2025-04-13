@@ -28,6 +28,7 @@ public class SecurityConfiguration {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers(HttpMethod.GET, "/consulta").permitAll()
+                        .requestMatchers(HttpMethod.POST, "/consulta/cadastrar").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente/cadastrar").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente").hasRole("ADMIN")
