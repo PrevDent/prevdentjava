@@ -8,6 +8,12 @@ spring:
     hibernate:
       ddl-auto: create
 
+  rabbitmq:
+    host: ${SPRING_RABBITMQ_HOST:localhost}
+    port: 5672
+    username: guest
+    password: guest
+
 api:
   security:
     jwt:

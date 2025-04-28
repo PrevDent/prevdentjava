@@ -1,10 +1,29 @@
 services:
-  app:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - prevdent-net
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  core:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: prevdent-core
     ports:
       - "8080:8080"
-
+    networks:
+      - prevdent-net
     environment:
-      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_RABBITMQ_HOST=rabbitmq
+
+networks:
+  prevdent-net:
+    external: true
+

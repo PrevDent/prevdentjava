@@ -15,6 +15,7 @@ import br.com.PrevDent.PrevDent.usecase.ports.out.DentistaPortOut;
 import br.com.PrevDent.PrevDent.usecase.ports.out.DiagnosticoPortOut;
 import br.com.PrevDent.PrevDent.usecase.ports.out.PacientePortOut;
 import br.com.PrevDent.PrevDent.usecase.service.ConsultaService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Slf4j
 @Service
 public class ConsultaServiceImpl implements ConsultaService {
 
@@ -58,8 +60,8 @@ public class ConsultaServiceImpl implements ConsultaService {
         }
         consulta.setPaciente(pacienteMapper.converterPacienteConsulta(paciente));
 
-
         DentistaEntity dentista = dentistaPortOut.findByDocumento(consulta.getDentista().getDocumento());
+
         consulta.setDentista(dentistaMapper.converteDentista(dentista));
 
         // Diagnóstico (opcional no agendamento)
@@ -74,6 +76,8 @@ public class ConsultaServiceImpl implements ConsultaService {
         ConsultaEntity consultaEntity = consultaMapper.converteConsultaEntity(consulta);
 
         consultaPortOut.save(consultaEntity);
+
+        log.info("Consulta cadastrada com sucesso: {}", consultaEntity.getIdConsulta());
     }
 
     @Override

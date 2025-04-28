@@ -8,12 +8,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ConsultaCreatRequest {
+public class ConsultaCreatRequest implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     @JsonProperty("id_consulta")
     private String idConsulta;
