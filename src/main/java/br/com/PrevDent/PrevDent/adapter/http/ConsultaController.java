@@ -125,4 +125,14 @@ public class ConsultaController {
             return ResponseEntity.notFound().build();
         }
     }
+
+    @GetMapping("/minhas")
+    public ResponseEntity<List<Consulta>> minhasConsultas(@RequestHeader("Authorization") String authorizationHeader) {
+
+        String tokenJwt = authorizationHeader.replace("Bearer ", "");
+
+        List<Consulta> consultas = consultaService.listarConsultasPorEmail(tokenJwt);
+
+        return ResponseEntity.ok(consultas);
+    }
 }

@@ -11,6 +11,8 @@ public interface ConsultaService {
 
     List<Consulta> listarConsultas();
 
+    List<Consulta> listarConsultasPorEmail(String tokenJwt);
+
     Optional<Consulta> atualizarConsulta(String id, Consulta consulta);
 
     boolean excluirConsulta(String id);

@@ -27,8 +27,8 @@ public class SecurityConfiguration {
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers(HttpMethod.GET, "/consulta").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/consulta/cadastrar").permitAll()
+                        .requestMatchers("consulta/**").permitAll()
+                        .requestMatchers("dentista/**", "diagnostico/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente/cadastrar").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente").hasRole("ADMIN")

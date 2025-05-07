@@ -10,6 +10,7 @@ import br.com.PrevDent.PrevDent.adapter.repository.mapper.DiagnosticoMapper;
 import br.com.PrevDent.PrevDent.adapter.repository.mapper.PacienteMapper;
 import br.com.PrevDent.PrevDent.domain.exception.ConsultaNotFoudException;
 import br.com.PrevDent.PrevDent.domain.model.Consulta;
+import br.com.PrevDent.PrevDent.infra.security.TokenService;
 import br.com.PrevDent.PrevDent.usecase.ports.out.ConsultaPortOut;
 import br.com.PrevDent.PrevDent.usecase.ports.out.DentistaPortOut;
 import br.com.PrevDent.PrevDent.usecase.ports.out.DiagnosticoPortOut;
@@ -50,6 +51,9 @@ public class ConsultaServiceImpl implements ConsultaService {
 
     @Autowired
     private DiagnosticoMapper diagnosticoMapper;
+
+    @Autowired
+    private TokenService tokenService;
 
     @Override
     public void cadastrarConsulta(Consulta consulta) {
@@ -96,6 +100,8 @@ public class ConsultaServiceImpl implements ConsultaService {
 
         return consultas;
     }
+
+
 
     @Override
     public Optional<Consulta> atualizarConsulta(String id, Consulta consulta) {
@@ -144,6 +150,20 @@ public class ConsultaServiceImpl implements ConsultaService {
         } else {
             throw new ConsultaNotFoudException();
         }
+    }
+
+
+    @Override
+    public List<Consulta> listarConsultasPorEmail(String tokenJwt) {
+
+        String email = tokenService.validateToken(tokenJwt);
+
+        List<ConsultaEntity> consultas = consultaPortOut.findAllByPacienteEmail(email);
+
+        return consultas.stream()
+                .map(consultaMapper::converteConsulta)
+                .toList();
+
     }
 
 }
