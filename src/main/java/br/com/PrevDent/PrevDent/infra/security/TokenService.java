@@ -24,6 +24,9 @@ public class TokenService {
             String token = JWT.create()
                     .withIssuer("prevdent-api")
                     .withSubject(pacienteEntity.getEmail())
+                    .withClaim("nome",pacienteEntity.getNome())
+                    .withClaim("cpf",pacienteEntity.getCpf())
+                    .withClaim("data_nascimento",pacienteEntity.getDataNascimento())
                     .withExpiresAt(getExpirationTime())
                     .sign(algorithm);
             return token;
