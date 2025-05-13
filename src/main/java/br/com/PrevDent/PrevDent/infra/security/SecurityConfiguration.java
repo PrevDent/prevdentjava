@@ -31,7 +31,7 @@ public class SecurityConfiguration {
                         .requestMatchers("dentista/**", "diagnostico/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente/cadastrar").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/paciente").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/paciente").hasRole("USER")
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
