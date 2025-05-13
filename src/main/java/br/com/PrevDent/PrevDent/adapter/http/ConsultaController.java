@@ -4,8 +4,10 @@ package br.com.PrevDent.PrevDent.adapter.http;
 import br.com.PrevDent.PrevDent.adapter.http.dto.mapper.ConsultaDtoMapper;
 import br.com.PrevDent.PrevDent.adapter.http.dto.request.ConsultaCreatRequest;
 import br.com.PrevDent.PrevDent.adapter.http.dto.request.ConsultaUpdateRequest;
+import br.com.PrevDent.PrevDent.adapter.http.dto.request.PerguntaRequest;
 import br.com.PrevDent.PrevDent.domain.model.Consulta;
 import br.com.PrevDent.PrevDent.usecase.service.ConsultaService;
+import br.com.PrevDent.PrevDent.usecase.service.serviceImpl.ConsultaIAServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -30,6 +32,9 @@ public class ConsultaController {
 
     @Autowired
     private ConsultaDtoMapper consultaDtoMapper;
+
+    @Autowired
+    private ConsultaIAServiceImpl consultaIAService;
 
 
 
@@ -134,5 +139,52 @@ public class ConsultaController {
         List<Consulta> consultas = consultaService.listarConsultasPorEmail(tokenJwt);
 
         return ResponseEntity.ok(consultas);
+    }
+
+
+    @GetMapping("/ia/resumo/{id}")
+    public ResponseEntity<String> gerarResumo(@PathVariable String id) {
+
+        Consulta consulta = consultaService.buscarConsulta(id);
+
+        String resumo = consultaIAService.gerarResumoConsulta(consulta);
+
+        return ResponseEntity.ok(resumo);
+    }
+
+    @GetMapping("/ia/prioridade/{id}")
+    public ResponseEntity<String> classificar(@PathVariable String id) {
+
+        Consulta consulta = consultaService.buscarConsulta(id);
+
+        String prioridade = consultaIAService.classificarPrioridade(consulta);
+
+        return ResponseEntity.ok(prioridade);
+    }
+
+    @PostMapping("/ia/pergunta")
+    public ResponseEntity<String> responderPergunta(@RequestBody PerguntaRequest perguntaRequest) {
+
+        log.info("Pergunta recebida: {}", perguntaRequest.pergunta());
+
+        List<Consulta> consultas = consultaService.listarConsultas();
+
+        String resposta = consultaIAService.responderPergunta(perguntaRequest.pergunta(), consultas);
+
+        log.info("Resposta gerada: {}", resposta);
+
+        return ResponseEntity.ok(resposta);
+    }
+
+    @GetMapping("/ia/traduzir/{id}")
+    public ResponseEntity<String> traduzirConsulta
+            (@PathVariable String id,
+             @RequestParam String idioma) {
+
+        Consulta consulta = consultaService.buscarConsulta(id);
+
+        String traduzido = consultaIAService.traduzirConsulta(consulta, idioma);
+
+        return ResponseEntity.ok(traduzido);
     }
 }

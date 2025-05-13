@@ -12,6 +12,9 @@
     <logger name="com.PrevDent.PrevDent" level="DEBUG"/>
     <logger name="org.springframework" level="INFO"/>
     <logger name="org.hibernate" level="WARN"/>
+    <logger name="org.springframework.ai" level="DEBUG"/>
+    <logger name="org.springframework.web.client" level="DEBUG"/>
+    <logger name="org.springframework.http.client" level="DEBUG"/>
 
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
