@@ -14,6 +14,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static java.lang.String.format;
+
 @Service
 public class ConsultaIAServiceImpl implements ConsultaIAService {
 
@@ -23,7 +25,7 @@ public class ConsultaIAServiceImpl implements ConsultaIAService {
 
     @Override
     public String gerarResumoConsulta(Consulta consulta) {
-        String prompt = String.format("""
+        String prompt = format("""
             Gere um resumo da seguinte consulta:
             - Dentista: %s
             - Paciente: %s
@@ -42,10 +44,14 @@ public class ConsultaIAServiceImpl implements ConsultaIAService {
     @Override
     public String classificarPrioridade(Consulta consulta) {
 
-        String prompt = String.format("""
+        String prompt = format("""
             Classifique a prioridade da seguinte consulta (urgente, rotina, follow-up):
             Tipo de tratamento: %s
-            """, consulta.getTipoTratamento());
+            Dentista: %s
+            Paciente: %s
+            """, consulta.getTipoTratamento()
+                , consulta.getDentista().getNome(),
+                consulta.getPaciente().getNome());
 
         return openAiChatClient.call(prompt);
     }
@@ -55,7 +61,7 @@ public class ConsultaIAServiceImpl implements ConsultaIAService {
 
         String contexto = consultas.stream()
                 .limit(10)
-                .map(c -> String.format(
+                .map(c -> format(
                         "Consulta em %s: %s com Dr. %s (%s)",
                         c.getData(),
                         c.getTipoTratamento(),
@@ -63,7 +69,7 @@ public class ConsultaIAServiceImpl implements ConsultaIAService {
                         c.getPaciente().getNome()))
                 .collect(Collectors.joining("\n"));
 
-        String prompt = String.format("""
+        String prompt = format("""
         Você é um assistente odontológico inteligente. 
         Baseado nestas consultas agendadas:
         %s
@@ -86,7 +92,7 @@ public class ConsultaIAServiceImpl implements ConsultaIAService {
     @Override
     public String traduzirConsulta(Consulta consulta, String idiomaDestino) {
 
-        String prompt = String.format("""
+        String prompt = format("""
             Traduza a seguinte descrição de consulta para %s:
             Dentista: %s, Paciente: %s, Data: %s, Tipo: %s
             """, idiomaDestino, consulta.getDentista().getNome(), consulta.getPaciente().getNome(), consulta.getData(), consulta.getTipoTratamento());

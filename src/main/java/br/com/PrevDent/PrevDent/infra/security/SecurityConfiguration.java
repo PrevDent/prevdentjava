@@ -28,7 +28,7 @@ public class SecurityConfiguration {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("consulta/**").permitAll()
-                        .requestMatchers("dentista/**", "diagnostico/**").permitAll()
+                        .requestMatchers("dentista/**", "diagnostico/**", "/actuator/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente/login").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente/cadastrar").permitAll()
                         .requestMatchers(HttpMethod.POST, "/paciente").hasRole("USER")
@@ -40,9 +40,10 @@ public class SecurityConfiguration {
     }
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+    public AuthenticationManager authenticationManager(
+            AuthenticationConfiguration authenticationConfiguration
+    ) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
-
     }
 
 

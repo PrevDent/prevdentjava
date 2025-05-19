@@ -22,7 +22,7 @@ spring:
 
   ai:
     model:
-      chat: DeepSeek-R1  # <-- FALTAVA ESSA LINHA
+      chat: DeepSeek-R1
     azure:
       openai:
         api-key: EO4QYkYu6S9TslvPXHA4fAmqwS1bdwYn74FS3ZonE02RBuN8qipnJQQJ99BEACfhMk5XJ3w3AAAAACOGjlDk
@@ -39,6 +39,24 @@ api:
     jwt:
       secret: your_secret_key_here
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - metrics
+          - prometheus
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    enable:
+      all: true
+  info:
+    env:
+      enabled: true
 
 
 logging:

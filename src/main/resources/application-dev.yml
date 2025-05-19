@@ -4,6 +4,8 @@ spring:
     username: "RM553621"
     password: "051102"
     driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      maximum-pool-size: 2
   jpa:
     hibernate:
       ddl-auto: create
@@ -14,9 +16,51 @@ spring:
     username: guest
     password: guest
 
+  ai:
+    model:
+      chat: DeepSeek-R1
+    azure:
+      openai:
+        api-key: EO4QYkYu6S9TslvPXHA4fAmqwS1bdwYn74FS3ZonE02RBuN8qipnJQQJ99BEACfhMk5XJ3w3AAAAACOGjlDk
+        endpoint: https://mr553-mak5nrtw-swedencentral.cognitiveservices.azure.com/
+        chat:
+          options:
+            deployment-name: DeepSeek-R1
+            temperature: 0.7
+            api-version: 2025-05-12  # <-- ESSA LINHA TAMBÉM ESTAVA FALTANDO
+
+
 api:
   security:
     jwt:
       secret: your_secret_key_here
 
 
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - metrics
+          - prometheus
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    enable:
+      all: true
+  info:
+    env:
+      enabled: true
+
+
+logging:
+  level:
+    org.springframework.ai: DEBUG
+    org.springframework.web.client: DEBUG
+    org.springframework.http.client: DEBUG
