@@ -10,6 +10,11 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
   core:
     build:
@@ -22,6 +27,11 @@ services:
       - prevdent-net
     environment:
       - SPRING_RABBITMQ_HOST=rabbitmq
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
 networks:
   prevdent-net:
